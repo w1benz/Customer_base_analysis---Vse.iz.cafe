@@ -23,6 +23,10 @@ Performed time-based analysis (May–June) to detect anomalies and growth patter
 - Retention dynamics: How well users stick over time.
 - The dashboard provides a clear, actionable overview of business performance.
 
+## SQL Queries Used in the Project
+**Below are the key PostgreSQL queries I wrote to calculate the business metrics:**
+
+### DAU - Number of unique daily active users 
 ```
 SELECT log_date,
     COUNT(DISTINCT user_id) AS DAU
